@@ -1,1 +1,22 @@
 `use strict`;
+
+const regForm = document.querySelector(`.login-form`);
+
+regForm.addEventListener(`submit`, handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const form = event.target;
+  const formEmail = form.elements.email.value.trim();
+  const formPass = form.elements.password.value.trim();
+
+  if (formEmail === `` || formPass === ``) {
+    return alert("All form fields must be filled in");
+  }
+  const formData = {
+    Email: formEmail,
+    Password: formPass,
+  };
+  console.log(formData);
+  form.reset();
+}

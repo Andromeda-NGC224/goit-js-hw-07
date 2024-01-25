@@ -21,6 +21,7 @@ body {
   justify-content: center;
   flex-direction: column;
   row-gap: 24px;
+  align-items: center;
 }
 
 .item {
@@ -56,8 +57,8 @@ body {
   width: 1440px;
   height: 848px;
   padding: 100px 156px;
-  justify-content: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .gallery-list-item-img {
@@ -71,4 +72,126 @@ body {
   border: 1px solid #808080;
   padding: 8px 0 8px 16px;
   color: #2e2f42;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form-email {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin-bottom: 8px;
+  row-gap: 8px;
+}
+.login-form-email-inpt {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 12px;
+}
+
+.login-form-pass {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin-bottom: 16px;
+  row-gap: 8px;
+}
+.login-form-pass-inpt {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 12px;
+}
+
+.login-form-btn {
+  border-radius: 8px;
+  border-color: transparent;
+  background: #4e75ff;
+  width: 86px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 275px;
+}
+
+.login-form-btn:hover {
+  background: #6c8cff;
+}
+
+.change-color {
+  color: #fff;
+  border-radius: 8px;
+  border-color: transparent;
+  background: #4e75ff;
+  width: 148px;
+  height: 40px;
+  cursor: pointer;
+}
+.change-color:hover {
+  background: #6c8cff;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  padding: 32px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.numb-input {
+  display: flex;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  width: 150px;
+  height: 40px;
+  outline: none;
+}
+
+.btn-create {
+  border-radius: 8px;
+  background: #4e75ff;
+  width: 120px;
+  height: 40px;
+  border-style: none;
+  cursor: pointer;
+}
+.btn-create:hover {
+  background: #6c8cff;
+}
+
+.btn-destroy {
+  background: #ff4e4e;
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.btn-destroy:hover {
+  background: #ff7070;
+}
+#boxes {
+  display: flex;
+  column-gap: 16px;
+  row-gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  padding: 32px;
+  flex-wrap: wrap;
 }
