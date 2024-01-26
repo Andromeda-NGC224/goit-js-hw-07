@@ -29,14 +29,14 @@ const images = [
 
 const gallery = document.querySelector(`.gallery`);
 
-for (let i = 0; i <= 6; i++) {
+for (let i = 0; i < images.length; i++) {
   const lists = document.createElement(`li`);
   lists.classList.add(`gallery-list-item`);
-  gallery.append(lists);
 
   const img = document.createElement(`img`);
   img.classList.add(`gallery-list-item-img`);
   img.src = images[i].url;
   img.alt = images[i].alt;
   lists.append(img);
+  gallery.append(lists);
 }

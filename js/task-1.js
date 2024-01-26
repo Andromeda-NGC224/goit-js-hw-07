@@ -1,6 +1,6 @@
 `use strict`;
 
-const allCategories = document.querySelectorAll(`h2`);
+const allCategories = document.querySelectorAll(`.item h2`);
 const result = `Number of categories: ${allCategories.length}`;
 console.log(result);
 

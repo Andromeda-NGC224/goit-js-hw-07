@@ -1,8 +1,8 @@
 `use strict`;
 
-const regForm = document.querySelector(`.login-form`);
+const loginForm = document.querySelector(`.login-form`);
 
-regForm.addEventListener(`submit`, handleSubmit);
+loginForm.addEventListener(`submit`, handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -14,8 +14,8 @@ function handleSubmit(event) {
     return alert("All form fields must be filled in");
   }
   const formData = {
-    Email: formEmail,
-    Password: formPass,
+    email: formEmail,
+    password: formPass,
   };
   console.log(formData);
   form.reset();

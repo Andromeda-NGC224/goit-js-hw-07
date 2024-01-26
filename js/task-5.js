@@ -8,9 +8,9 @@ const body = document.querySelector(`body`);
 changeBtn.addEventListener(`click`, handleClick);
 
 function handleClick(event) {
-  spanColor.textContent = "- ";
-  spanColor.insertAdjacentHTML("beforeend", getRandomHexColor());
-  body.style.background = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  spanColor.textContent = randomColor;
+  body.style.background = randomColor;
 }
 
 function getRandomHexColor() {
